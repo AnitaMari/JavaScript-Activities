@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios con JS</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- ***mejor vincular el js aquí en el head. También se puede incrustar en el head o en el body. O en linea asociado a un evento html**** -->
+
+    <!-- JS VINCULADO EN EL HEAD: -->
+    <script src="js/ejercicios.js"></script>
+
+    <!-- JS INCRUSTADO EN EL HEAD: -->
+    <!-- <script>
+        document.write(new Date());
+    </script> -->
+</head>
+
+<body>
+    <!-- ESTO SE MUESTRA SI NO SE PUEDE EJECUTAR JS: -->
+    <noscript>
+        <p>Bienvenido a Mi Sitio</p>
+        <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript. Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</p>
+    </noscript>
+
+    <!-- JS INCRUSTADO EN EL BODY: -->
+    <!-- <script>
+        window.open("http://www.google.com","","width=550,height=420,menubar=no")
+    </script> -->
+
+    <!-- JS EN EL HTML: -->
+    <!-- <input type="button" value="Atrás" onclick="history.go(-1)"> -->
+    <!-- <input type="button" value="Nombre" onclick="document.write('Mi nombre es Ana Mari')"> -->
+
+    
+    <!-- EN LÍNEA. ESTO NO ES MUY RECOMENDABLE: -->
+    <!-- <p onclick="alert('Un mensaje de prueba')">
+        Haga click aquí.
+    </p> -->
+
+    <h1>Ejercicios de JavaScript</h1>
+
+    <div class="contenedor">
+        <input type="button" value="Ver mi nombre" onclick="miNombre()">
+
+        <input type="button" value="Mensaje de bienvenida" onclick="muestraMensaje()">
+
+        <input type="button" value="Operaciones con 2 números" onclick="operaciones()">
+        
+        <input type="button" value="Meses" onclick="meses()">
+
+        <input type="button" value="Operadores" onclick="operadores()">
+
+        <input type="button" value="Par" onclick="par()">
+
+        <input type="button" value="Mayoría de edad" onclick="edad()">
+
+        <input type="button" value="Edad" onclick="edad2()">
+
+        <input type="button" value="Mayor/Menor/Igual" onclick="mayor()">
+
+        <input type="button" value="Divisible" onclick="divisible()">
+
+        <input type="button" value="Operaciones Switch" onclick="operacionesSwitch()">
+
+        <input type="button" value="DNI Switch" onclick="dniSwitch()">
+
+        <input type="button" value="DNI2" onclick="dni2()">
+
+        <input type="button" value="DNI Split" onclick="dniSplit()">
+
+        <input type="button" value="Bucle FOR" onclick="bucleFor()">
+
+        <input type="button" value="Tabla Multiplicar" onclick="tablaMultiplicar()">
+
+        <input type="button" value="Meses con FOR" onclick="mesesFor()">
+
+        <input type="button" value="Encabezado" onclick="encabezado()">
+
+        <input type="button" value="Intervalo" onclick="intervalo()">
+
+        <input type="button" value="Intervalo2" onclick="intervalo2()">
+
+        <input type="button" value="Intervalo más múltiplos de 7" onclick="intervaloMultiplo7()">
+
+        <input type="button" value="Intervalo más múltiplo variable" onclick="intervaloMultiploVariable()">
+
+        <input type="button" value="Solo múltiplos de intervalo" onclick="intervaloSoloMultiplo()">
+
+        <input type="button" value="Factorial" onclick="factorial()">
+
+        <input type="button" value="Table" onclick="table()">
+
+        <input type="button" value="Ajedrez" onclick="ajedrez()">
+
+        <input type="button" value="Ajedrez 2" onclick="ajedrez2()">
+
+        <input type="button" value="Bucle For In (meses)" onclick="bucleForIn()">
+
+        <input type="button" value="Suma de Numeros con While mostrando resultado" onclick="sumaNumerosWhile()">
+
+        <input type="button" value="Suma de Numeros con While2 mostrando números" onclick="sumaNumerosWhile2()">
+
+        <input type="button" value="Media" onclick="media()">
+
+        <input type="button" value="Suma Aleatoria" onclick="sumaAleatoria()">
+
+        
+        <input type="button" value="Estadística" onclick="estadistica()">
+
+        <input type="button" value="Estadística2" onclick="estadistica2()">
+
+        <input type="button" value="Estadística3" onclick="estadistica3()">
+
+        <input type="button" value="Parámetros - Bienvenida" onclick="parametros('Santi',prompt('Introduce un color válido (en inglés, o su código)'))">
+    
+        <input type="button" value="Calcula" onclick="calculaFuncion()">
+
+        <input type="button" value="Mayor Array" onclick="mayorArray()">
+
+        <input type="button" value="Mayor Array Indeterminada" onclick="array1()">
+
+        <input type="button" value="Funciones de texto" onclick="funcionesTexto()">
+
+        <input type="button" value="DNI con CharAt" onclick="dniCharAt()">
+        
+        <input type="button" value="Sin Espacios" onclick="sinEspacios()">
+
+        <input type="button" value="Selección Resaltada" onclick="seleccionResaltada()">
+
+        <input type="button" value="Separar caracteres por símbolo" onclick="separarCaracteres()">
+
+        <input type="button" value="Separar y unir sin split y join" onclick="sinSplitJoin()">
+
+        <input type="button" value="Separar y unir con 
+        Split y Join" onclick="splitJoin()">
+
+        <input type="button" value="Separar un string por la mitad" onclick="mitadString()">
+
+        <input type="button" value="Convertir a Números" onclick="convierteNumero()">
+        
+        <input type="button" value="Mete un número (is a number??)" onclick="meteNumero()">
+
+        <input type="button" value="Calcula con la función Mete Numero" onclick="calculaFuncionConMeteNumero()">
+                
+        <input type="button" value="Eval" onclick="funcionEval()">
+
+        <input type="button" value="Raiz Cuadrada" onclick="raizCuadrada()">
+
+        <input type="button" value="Letra" onclick="letra()">
+
+        <input type="button" value="Raiz Cuadrada + Letra" onclick="principal()">
+
+        <input type="button" value="Vocales" onclick="vocales()">
+
+        <input type="button" value="Reverse" onclick="reverse()">
+
+        <input type="button" value="Reverse 2 versión Santiago con for" onclick="reves()">
+
+        <input type="button" value="Elimina espacios" onclick="eliminaEspacios()">
+
+        <input type="button" value="Palíndromo" onclick="palindromo()">
+
+        <input type="button" value="Palíndromo versión Santiago" onclick="palindromo2()">
+
+        <input type="button" value="Fecha" onclick="fecha()">
+
+        <input type="button" value="Días entre fechas" onclick="diasEntreFechas()">
+
+        <input type="button" value="Días entre fechas versión Santiago" onclick="diasEntreFechas2()">
+
+        <input type="button" value="Días entre fechas con Métodos y metiendo formato español" onclick="diasEntreFechas3()">
+
+        <input type="button" value="Fecha en formato normal español" onclick="fechaFormatoNormal()">
+
+        <input type="button" value="Calcular edad" onclick="calcularEdad()">
+
+        <input type="button" value="Calcular edad versión 2" onclick="calcularEdad2()">
+
+        <input type="button" value="Funciones con Arrays" onclick="arrays()">
+
+        <input type="button" value="Ordenar números con SORT y función (a, b)" onclick="ordenar(arr)">
+
+        <input type="button" value="Ordenar números con SORT y función FOR" onclick="ordenar2()">
+  
+        <input type="button" value="Estadística X" onclick="estadisticaX(100000)">
+        
+        <input type="button" value="Euromillones" onclick="euromillones()">
+
+        <input type="button" value="Primitiva" onclick="primitiva()">
+
+        <input type="button" value="Genera Password" onclick="password()">
+
+        <input type="button" value="Media Array" onclick="mediaArray(arr)">
+
+        <input type="button" value="Array Multidimensional" onclick="arrayMultidimensional()">
+
+        <input type="button" value="Array Multidimensional 2" onclick="arrayMultidimensional2()">
+
+        <input type="button" value="Ejemplo de objeto" onclick="objeto1()">
+
+        <input type="button" value="Ejemplo de instancia" onclick="instancia1()">
+
+        <!-- REPASO -->
+        <input type="button" value="A Número" onclick="aNumero()">
+
+        <input type="button" value="Ver valor" onclick="verValor(a)">
+
+        <input type="button" value="Operadores Repaso" onclick="operadoresRepaso()">
+
+        <input type="button" value="Prueba División" onclick="pruebaDivision()">
+
+        <input type="button" value="pide 2 valores" onclick="pide2Valores(color)">
+
+        <input type="button" value="nombre mayúsculas" onclick="nombreMayusculas()">
+
+</body>
+
+</html>

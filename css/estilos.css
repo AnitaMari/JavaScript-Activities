@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .contenedor {
+    display: flex;
+
+} */
+
+h1 {
+    text-align: center;
+    background-color: yellow;
+    border: 5px solid blue;
+    border-radius: 20px 20px;
+    padding: 10px;
+}
+
+input[type="button"] {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 1px 20px;
+    cursor: pointer;
+    color: blue;
+    background-color: white;
+}
+
+input[type="button"]:hover {
+    color: white;
+    background-color: blue;
+
+}
